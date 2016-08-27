@@ -34,7 +34,11 @@ public class TechTree : MonoBehaviour {
 
     public void OnPointerClick(BaseEventData data)
     {
+        if (bought)
+            return;
+
         // enough tech?
+
         bought = true;
     }
 
