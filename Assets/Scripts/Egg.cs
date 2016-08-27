@@ -32,10 +32,10 @@ public class Egg : MonoBehaviour {
             GameObject.Destroy(this.gameObject);
             GameObject go = (GameObject)Instantiate(EggTop);
             go.transform.position = this.gameObject.transform.position;
-            go.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,1));
+            go.GetComponent<Rigidbody2D>().AddForce(new Vector2(8000,3750));
             GameObject go2 = (GameObject)Instantiate(EggBottom);
             go2.transform.position = this.gameObject.transform.position;
-            go2.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1));
+            go2.GetComponent<Rigidbody2D>().AddForce(new Vector2(-8000, 3750));
             GameManager.Instance.tech += (int)maxScore;
         }
     }
