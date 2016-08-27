@@ -16,9 +16,23 @@ public class TechTree : MonoBehaviour {
     {
         GetComponentInChildren<Text>().text = techTreeName + "\n" + cost + " Tech";
 
-        EventTrigger trigger = gameObject.AddComponent<EventTrigger>();
-        //trigger.OnPointerEnter.t
-	}
+        AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerDown, OnPointerEnter);
+    }
+
+    public static void AddEventTriggerListener(EventTrigger trigger, EventTriggerType eventType, System.Action<BaseEventData> callback)
+    {
+        EventTrigger.Entry entry = new EventTrigger.Entry();
+        entry.eventID = eventType;
+        entry.callback = new EventTrigger.TriggerEvent();
+        entry.callback.AddListener(new UnityEngine.Events.UnityAction<BaseEventData>(callback));
+        trigger.triggers.Add(entry);
+    }
+
+
+    public void OnPointerEnter(BaseEventData data)
+    {
+        Debug.Log("adsl;fkjasdf");
+    }
 
 	void Update ()
     {
