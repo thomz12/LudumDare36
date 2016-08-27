@@ -586,15 +586,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014227949364, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.75051486
+      value: 0.5210841
       objectReference: {fileID: 0}
     - target: {fileID: 4000014227949364, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.6608536
+      value: 0.8535054
       objectReference: {fileID: 0}
     - target: {fileID: 4000014227949364, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 97.27
+      value: 62.81
       objectReference: {fileID: 0}
     - target: {fileID: 4000014227949364, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalRotation.y
@@ -602,23 +602,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012626912040, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.27815276
+      value: 0.024432093
       objectReference: {fileID: 0}
     - target: {fileID: 4000012626912040, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.96053684
+      value: -0.9997015
       objectReference: {fileID: 0}
     - target: {fileID: 4000012626912040, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 392.3
+      value: 357.2
       objectReference: {fileID: 0}
     - target: {fileID: 4000012626912040, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012626912040, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2508d310a3397df43b107e24f5ec5b9d, type: 2}
@@ -829,7 +829,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1.1262878, y: 0.3558402}
-  m_ConnectedAnchor: {x: -0.036778983, y: 0.9133343}
+  m_ConnectedAnchor: {x: 0.3423661, y: 0.9133343}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -951,7 +951,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011105445520, guid: 0ec0681244af34b4fb47c5e90d9d04e4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.384
+      value: 0.169
       objectReference: {fileID: 0}
     - target: {fileID: 4000011105445520, guid: 0ec0681244af34b4fb47c5e90d9d04e4, type: 2}
       propertyPath: m_LocalPosition.y
