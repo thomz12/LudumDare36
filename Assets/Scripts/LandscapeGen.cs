@@ -18,7 +18,7 @@ public class LandscapeGen : MonoBehaviour {
             GameObject go = (GameObject)Instantiate(Landscape);
             spawnCount++;
             go.transform.position = new Vector3(480 * spawnCount, 0, 0);
-            
+            go.transform.SetParent(this.gameObject.transform);
         }
 	}
 }
