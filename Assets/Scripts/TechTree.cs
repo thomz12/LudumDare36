@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class TechTree : MonoBehaviour {
 
@@ -9,10 +10,13 @@ public class TechTree : MonoBehaviour {
     public TechTree[] unlock;
     public bool unlocked;
     public bool bought;
+    public string desc;
 
 	void Start ()
     {
         GetComponentInChildren<Text>().text = techTreeName + "\n" + cost + " Tech";
+
+     
 	}
 
 	void Update ()
