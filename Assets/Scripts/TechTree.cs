@@ -16,7 +16,8 @@ public class TechTree : MonoBehaviour {
     {
         GetComponentInChildren<Text>().text = techTreeName + "\n" + cost + " Tech";
 
-     
+        EventTrigger trigger = gameObject.AddComponent<EventTrigger>();
+        //trigger.OnPointerEnter.t
 	}
 
 	void Update ()
