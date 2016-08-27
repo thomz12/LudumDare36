@@ -28,10 +28,14 @@ public class TechTree : MonoBehaviour {
         trigger.triggers.Add(entry);
     }
 
+    public void OnPointerExit(BaseEventData data)
+    {
+        //
+    }
 
     public void OnPointerEnter(BaseEventData data)
     {
-        Debug.Log("adsl;fkjasdf");
+        //
     }
 
 	void Update ()
