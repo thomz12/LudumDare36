@@ -38,7 +38,7 @@ public class Egg : MonoBehaviour {
             GameObject go2 = (GameObject)Instantiate(EggBottom);
             go2.transform.position = this.gameObject.transform.position;
             go2.GetComponent<Rigidbody2D>().AddForce(new Vector2(-8000, 1000));
-            GameManager.Instance.tech += (int)maxScore;
+            GameManager.Instance.score = (int)maxScore;
             StartCoroutine(Wait());
             
         }
