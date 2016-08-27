@@ -9,6 +9,9 @@ TagManager:
   - GameManager
   - TechTree
   - GameOver
+  - GameOver_points
+  - GameOver_tech
+  - GameOver_techtotal
   layers:
   - Default
   - TransparentFX

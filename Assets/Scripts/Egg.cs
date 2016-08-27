@@ -26,18 +26,28 @@ public class Egg : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D coll)
     {
-        if(coll.gameObject.tag == "Ground")
+        if(coll.gameObject.tag == "Ground" && (GameManager.Instance.GameState == GameManager.State.PLAY))
         {
             GameManager.Instance.GameState = GameManager.State.UPGRADE;
-            GameObject.FindWithTag("GameOver").transform.GetChild(0).gameObject.SetActive(true);
-            GameObject.Destroy(this.gameObject);
+            this.GetComponent<PolygonCollider2D>().enabled = false;
+            this.GetComponent<SpriteRenderer>().enabled = false;
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>().Target = null;
             GameObject go = (GameObject)Instantiate(EggTop);
             go.transform.position = this.gameObject.transform.position;
             go.GetComponent<Rigidbody2D>().AddForce(new Vector2(8000,1000));
             GameObject go2 = (GameObject)Instantiate(EggBottom);
             go2.transform.position = this.gameObject.transform.position;
             go2.GetComponent<Rigidbody2D>().AddForce(new Vector2(-8000, 1000));
-            GameManager.Instance.tech += (int)maxScore;
+            GameManager.Instance.score = (int)maxScore;
+            StartCoroutine(Wait());
+            
         }
+    }
+
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+        GameObject.FindWithTag("GameOver").transform.GetChild(0).gameObject.SetActive(true);
+        GameObject.Destroy(this.gameObject);
     }
 }
