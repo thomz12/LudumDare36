@@ -177,7 +177,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 124159642}
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1196,6 +1196,21 @@ Prefab:
         type: 2}
       propertyPath: m_Mass
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000011860802512, guid: 0ec0681244af34b4fb47c5e90d9d04e4,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.23460731
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000011860802512, guid: 0ec0681244af34b4fb47c5e90d9d04e4,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.50106096
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000011860802512, guid: 0ec0681244af34b4fb47c5e90d9d04e4,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.3952668
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ec0681244af34b4fb47c5e90d9d04e4, type: 2}
