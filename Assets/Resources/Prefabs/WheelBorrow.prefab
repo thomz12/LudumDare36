@@ -201,7 +201,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014085590846}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -218,7 +218,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012579358164}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -252,9 +252,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.23460746, y: -0.68210685}
+  m_Offset: {x: 0.23460731, y: -0.50106096}
   serializedVersion: 2
-  m_Size: {x: 3.5758746, y: 0.033174064}
+  m_Size: {x: 3.5758746, y: 0.3952668}
 --- !u!61 &61000013950896940
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -363,7 +363,7 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1.7165841, y: -0.75787127}
-  m_ConnectedAnchor: {x: -0.40256098, y: 0.0021287284}
+  m_ConnectedAnchor: {x: 0.016583985, y: -0.024871223}
   m_Suspension:
     m_DampingRatio: 0
     m_Frequency: 87.89

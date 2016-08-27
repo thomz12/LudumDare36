@@ -38,6 +38,8 @@ GameObject:
   - 95: {fileID: 95000012033212980}
   - 50: {fileID: 50000012435706184}
   - 114: {fileID: 114000010298832948}
+  - 58: {fileID: 58000012842951168}
+  - 233: {fileID: 233000011071344630}
   m_Layer: 0
   m_Name: Caveman
   m_TagString: Untagged
@@ -178,7 +180,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013363225448}
   - 212: {fileID: 212000013590645366}
-  - 50: {fileID: 50000014144425468}
+  - 50: {fileID: 50000011533668052}
   m_Layer: 0
   m_Name: CavemanTorso
   m_TagString: Untagged
@@ -361,7 +363,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010359391564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.16, z: 5}
+  m_LocalPosition: {x: -0.2, y: -1.16, z: 5}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -498,10 +500,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012569950542}
-  m_LocalRotation: {x: -0, y: 0, z: -0.2638728, w: -0.9645575}
+  m_LocalRotation: {x: 0, y: -0, z: 0.024432093, w: -0.9997015}
   m_LocalPosition: {x: 0.089, y: 0.335, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 390.6}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 357.2}
   m_Children:
   - {fileID: 4000010310583742}
   m_Father: {fileID: 4000013363225448}
@@ -597,32 +599,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010206631068}
-  m_LocalRotation: {x: 0, y: 0, z: 0.6846107, w: 0.72890896}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5210841, w: 0.8535054}
   m_LocalPosition: {x: -0.143, y: 0.246, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 86.41}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 62.81}
   m_Children:
   - {fileID: 4000011057030536}
   m_Father: {fileID: 4000013363225448}
   m_RootOrder: 1
---- !u!50 &50000012435706184
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010359391564}
-  m_UseAutoMass: 0
-  m_Mass: 50
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!50 &50000014144425468
+--- !u!50 &50000011533668052
 Rigidbody2D:
   serializedVersion: 2
   m_ObjectHideFlags: 1
@@ -639,6 +624,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!50 &50000012435706184
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010359391564}
+  m_UseAutoMass: 0
+  m_Mass: 80
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &58000012842951168
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010359391564}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -1.96}
+  serializedVersion: 2
+  m_Radius: 0.29
 --- !u!61 &61000011817668018
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -650,9 +666,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.005984187, y: -0.48139715}
+  m_Offset: {x: -0.005984187, y: -0.33288598}
   serializedVersion: 2
-  m_Size: {x: 0.5676017, y: 3.528658}
+  m_Size: {x: 0.5676017, y: 3.231635}
 --- !u!95 &95000012033212980
 Animator:
   serializedVersion: 3
@@ -1012,3 +1028,26 @@ SpriteRenderer:
   m_Color: {r: 0.335, g: 0, b: 0.19816905, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!233 &233000011071344630
+HingeJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010359391564}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0.99878037, y: -0.33748174}
+  m_ConnectedAnchor: {x: 0.22993861, y: 0.30200964}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
