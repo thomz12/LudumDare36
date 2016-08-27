@@ -12,11 +12,14 @@ public class TechTree : MonoBehaviour {
     public bool bought;
     public string desc;
 
+    private bool _tooltip;
+
 	void Start ()
     {
         GetComponentInChildren<Text>().text = techTreeName + "\n" + cost + " Tech";
 
-        AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerDown, OnPointerEnter);
+        AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerEnter, OnPointerEnter);
+        AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerExit, OnPointerExit);
     }
 
     public static void AddEventTriggerListener(EventTrigger trigger, EventTriggerType eventType, System.Action<BaseEventData> callback)
@@ -30,12 +33,24 @@ public class TechTree : MonoBehaviour {
 
     public void OnPointerExit(BaseEventData data)
     {
-        //
+        GameObject go = GameObject.FindWithTag("Tooltip");
+        go.GetComponent<RectTransform>().position = ((PointerEventData)data).position;
+        go.GetComponent<Image>().enabled = false;
+        go.GetComponentInChildren<Text>().enabled = false;
+
+        _tooltip = false;
     }
 
     public void OnPointerEnter(BaseEventData data)
     {
-        //
+        GameObject go = GameObject.FindWithTag("Tooltip");
+        RectTransform trans = go.GetComponent<RectTransform>();
+        trans.position = new Vector2(((PointerEventData)data).position.x + trans.sizeDelta.x / 2, ((PointerEventData)data).position.y - trans.sizeDelta.y / 2);
+        go.GetComponent<Image>().enabled = true;
+        go.GetComponentInChildren<Text>().enabled = true;
+        go.GetComponentInChildren<Text>().text = desc;
+
+        _tooltip = true;
     }
 
 	void Update ()
@@ -48,6 +63,16 @@ public class TechTree : MonoBehaviour {
                 break;
             }
             unlocked = true;
+        }
+
+        if(_tooltip)
+        {
+            GameObject go = GameObject.FindWithTag("Tooltip");
+            RectTransform trans = go.GetComponent<RectTransform>();
+            trans.position = new Vector2(Input.mousePosition.x + trans.sizeDelta.x / 2, Input.mousePosition.y - trans.sizeDelta.y / 2);
+
+            go.GetComponent<Image>().enabled = true;
+            go.GetComponentInChildren<Text>().enabled = true;
         }
 
         if(unlocked)
