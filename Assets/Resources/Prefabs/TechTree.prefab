@@ -310,7 +310,7 @@ GameObject:
   - 114: {fileID: 114000010194039876}
   - 114: {fileID: 114000010217302514}
   m_Layer: 5
-  m_Name: TechTree_Metals
+  m_Name: TechTree_Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,12 +643,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 35
-  techTreeName: Metals
+  techTreeName: Paper
   unlock:
   - {fileID: 114000010451459252}
   unlocked: 0
   bought: 0
-  desc: Better stucture makes sure you can build bigger Wheelborrows!
+  desc: With paper, you are able to do science twice as fast! (+100% Tech points)
 --- !u!114 &114000010217302514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Metals
+  m_Text: 'Paper
 
     10 Tech'
 --- !u!114 &114000012207846204
@@ -1069,7 +1069,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 780c4cd92a80445458838d51ae20c9df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45472ccdf543e79409ec8652bb6b34bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1984,7 +1984,7 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010921723592}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 0
   m_Camera: {fileID: 0}

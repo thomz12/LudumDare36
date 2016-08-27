@@ -14,6 +14,8 @@ public class LandscapeGen : MonoBehaviour {
 
     public const float size = 100;
 
+    public Material ground;
+
     private float oldHeight = -2.5f;
 
 	// Use this for initialization
@@ -72,7 +74,7 @@ public class LandscapeGen : MonoBehaviour {
                 indicies.Add(offset + 2);
             }
 
-             vert2d.Add(new Vector2(0, -1000));
+            vert2d.Add(new Vector2(0, -1000));
 
             m.vertices = verts.ToArray();
             m.triangles = indicies.ToArray();
@@ -86,7 +88,10 @@ public class LandscapeGen : MonoBehaviour {
             go.transform.position = new Vector3(size * spawnCount - size / 2, 0, 5);
             go.AddComponent<PolygonCollider2D>();
 
+            go.GetComponent<MeshRenderer>().material = ground;
+
             go.GetComponent<PolygonCollider2D>().points = vert2d.ToArray();
+            roughness += 0.15f;
         }
 	}
 }
