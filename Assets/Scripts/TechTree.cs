@@ -37,9 +37,11 @@ public class TechTree : MonoBehaviour {
         if (bought || !unlocked)
             return;
 
-        // enough tech?
-
-        bought = true;
+        if (GameManager.Instance.tech >= cost)
+        {
+            GameManager.Instance.tech -= cost;
+            bought = true;
+        }
     }
 
     public void OnPointerExit(BaseEventData data)
@@ -89,6 +91,10 @@ public class TechTree : MonoBehaviour {
         if(unlocked)
         {
             GetComponentInChildren<Image>().color = new Color(101 / 255f, 255 / 255f, 102 / 255f);
+            if (GameManager.Instance.tech < cost)
+            {
+                GetComponentInChildren<Image>().color = new Color(255 / 255f, 255 / 255f, 102 / 255f);
+            }
         }
 
         if(bought)
