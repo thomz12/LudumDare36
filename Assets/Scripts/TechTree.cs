@@ -34,7 +34,7 @@ public class TechTree : MonoBehaviour {
 
     public void OnPointerClick(BaseEventData data)
     {
-        if (bought)
+        if (bought || !unlocked)
             return;
 
         // enough tech?
