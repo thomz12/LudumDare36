@@ -28,14 +28,15 @@ public class Egg : MonoBehaviour {
     {
         if(coll.gameObject.tag == "Ground")
         {
-            //TODO GAMESTATE
+            GameManager.Instance.GameState = GameManager.State.UPGRADE;
             GameObject.Destroy(this.gameObject);
             GameObject go = (GameObject)Instantiate(EggTop);
             go.transform.position = this.gameObject.transform.position;
+            go.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,1));
             GameObject go2 = (GameObject)Instantiate(EggBottom);
             go2.transform.position = this.gameObject.transform.position;
+            go2.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1));
             GameManager.Instance.tech += (int)maxScore;
-            GameManager.Instance.GameState = GameManager.State.UPGRADE;
         }
     }
 }
