@@ -895,9 +895,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Landscape: {fileID: 1000010792816902, guid: f297eaecc13692e4f9725988ce987d5e, type: 2}
-  detail: 40
-  roughness: 0.3
-  minHeight: -2
+  detail: 500
+  roughness: 0.1
+  minHeight: -5
   maxHeight: 10
   ground: {fileID: 2100000, guid: 46cb232885276fc4ba6f60c6f8287658, type: 2}
 --- !u!1001 &987695047
@@ -1143,6 +1143,7 @@ Prefab:
         type: 2}
       propertyPath: techTreeName
       value: Shooting Spear
+      objectReference: {fileID: 0}
     - target: {fileID: 223000010863048880, guid: 42fa112c775b30842b41e15805c1ee79,
         type: 2}
       propertyPath: m_Enabled
@@ -1343,6 +1344,7 @@ MonoBehaviour:
   unlocked: 0
   bought: 0
   desc: Metals are used to reinforce Wheelbarrows!
+  nr: 0
 --- !u!114 &1917397602
 MonoBehaviour:
   m_ObjectHideFlags: 0
