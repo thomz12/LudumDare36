@@ -29,6 +29,7 @@ public class Egg : MonoBehaviour {
         if(coll.gameObject.tag == "Ground")
         {
             GameManager.Instance.GameState = GameManager.State.UPGRADE;
+            GameObject.FindWithTag("GameOver").transform.GetChild(0).gameObject.SetActive(true);
             GameObject.Destroy(this.gameObject);
             GameObject go = (GameObject)Instantiate(EggTop);
             go.transform.position = this.gameObject.transform.position;

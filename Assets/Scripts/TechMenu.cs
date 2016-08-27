@@ -7,7 +7,9 @@ using UnityEngine.EventSystems;
 public class TechMenu : MonoBehaviour {
 
     public Vector2 offset;
-    public bool on;
+    private bool on;
+
+    public bool On { get { return on; } set { TurnOn(value); on = value; } }
 
     public int minX;
     public int maxX;
@@ -23,6 +25,11 @@ public class TechMenu : MonoBehaviour {
     {
         transform.parent.GetComponent<Canvas>().enabled = on;
 	}
+
+    void TurnOn(bool onoff)
+    {
+        transform.parent.GetComponent<Canvas>().enabled = onoff;
+    }
 	
 	// Update is called once per frame
 	void Update ()
