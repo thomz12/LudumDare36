@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
-
-    public int score;
+    public enum State { MENU, PLAY, UPGRADE};
     public int tech;
+    public State GameState;
 
     private static GameManager _instance;
     public static GameManager Instance

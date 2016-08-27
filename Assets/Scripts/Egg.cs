@@ -17,10 +17,11 @@ public class Egg : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        maxScore = maxScore > Mathf.Floor(this.gameObject.transform.position.x) ? maxScore : Mathf.Floor(this.gameObject.transform.position.x);
-        Score.text = maxScore.ToString();
-
-        GameManager.Instance.score = (int)maxScore;
+        if (GameManager.Instance.GameState == GameManager.State.PLAY)
+        {
+            maxScore = maxScore > Mathf.Floor(this.gameObject.transform.position.x) ? maxScore : Mathf.Floor(this.gameObject.transform.position.x);
+            Score.text = maxScore.ToString();
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D coll)
@@ -33,6 +34,8 @@ public class Egg : MonoBehaviour {
             go.transform.position = this.gameObject.transform.position;
             GameObject go2 = (GameObject)Instantiate(EggBottom);
             go2.transform.position = this.gameObject.transform.position;
+            GameManager.Instance.tech += (int)maxScore;
+            GameManager.Instance.GameState = GameManager.State.UPGRADE;
         }
     }
 }
