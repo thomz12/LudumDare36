@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
     {
         float actualSpeed = maxSpeed;
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && GameManager.Instance.getUpgrade(1))
             actualSpeed *= sprintMultiplier;
 
         Rigidbody2D body = GetComponent<Rigidbody2D>();
