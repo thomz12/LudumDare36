@@ -17,6 +17,6 @@ public class Player : MonoBehaviour {
         Rigidbody2D body = GetComponent<Rigidbody2D>();
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
 
-        GetComponent<Animator>().speed = body.velocity.x;
+        GetComponent<Animator>().SetFloat("MovementSpeed", body.velocity.x);
 	}
 }
