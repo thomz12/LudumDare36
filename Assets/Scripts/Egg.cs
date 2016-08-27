@@ -19,6 +19,8 @@ public class Egg : MonoBehaviour {
 	void Update () {
         maxScore = maxScore > Mathf.Floor(this.gameObject.transform.position.x) ? maxScore : Mathf.Floor(this.gameObject.transform.position.x);
         Score.text = maxScore.ToString();
+
+        GameManager.Instance.score = (int)maxScore;
     }
 
     public void OnCollisionEnter2D(Collision2D coll)

@@ -6,18 +6,20 @@ public class GameManager : MonoBehaviour {
     public int score;
     public int tech;
 
-
-    private static GameObject instance;
-    public static GameObject Instance
+    private static GameManager _instance;
+    public static GameManager Instance
     {
         get
         {
-            return Instance;
+            if (_instance == null)
+            {
+                _instance = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+            }
+            return _instance;
         }
         set
         {
-            if (instance == null)
-                Instance = GameObject.FindWithTag("GameManager");
+            ;
         }
     }
 }
