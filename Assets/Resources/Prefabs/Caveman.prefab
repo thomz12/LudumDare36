@@ -209,7 +209,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011142312124}
   - 212: {fileID: 212000012058576320}
-  - 61: {fileID: 61000013742685790}
   m_Layer: 0
   m_Name: CavemanLowerArm
   m_TagString: Untagged
@@ -241,7 +240,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013839246196}
   - 212: {fileID: 212000013905307054}
-  - 61: {fileID: 61000012530447174}
   m_Layer: 0
   m_Name: CavemanLowerArm
   m_TagString: Untagged
@@ -637,34 +635,6 @@ BoxCollider2D:
   m_Offset: {x: -0.005984187, y: -0.48139715}
   serializedVersion: 2
   m_Size: {x: 0.5676017, y: 3.528658}
---- !u!61 &61000012530447174
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012952450496}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: -0.017147169, y: -0.3088683}
-  serializedVersion: 2
-  m_Size: {x: 0.2346672, y: 0.22322635}
---- !u!61 &61000013742685790
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012363585954}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: -0.02648902, y: -0.29261768}
-  serializedVersion: 2
-  m_Size: {x: 0.22807568, y: 0.31476644}
 --- !u!95 &95000012033212980
 Animator:
   serializedVersion: 3
