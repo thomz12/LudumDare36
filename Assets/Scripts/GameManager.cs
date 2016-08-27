@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour {
     public void setUpgrade(int u)
     {
         _upgrades += (int)Mathf.Pow(2,u);
-        Debug.Log(_upgrades);
     } 
 
     public bool getUpgrade(int u)

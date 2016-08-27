@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour {
 
@@ -16,7 +17,7 @@ public class GameOver : MonoBehaviour {
     public void ClickRestart()
     {
         GameManager.Instance.GameState = GameManager.State.PLAY;
-        Application.LoadLevel(0);
+        SceneManager.LoadScene(0);
     }
 
     public void ClickSpend()
