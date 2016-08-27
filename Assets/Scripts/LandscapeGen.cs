@@ -72,6 +72,8 @@ public class LandscapeGen : MonoBehaviour {
                 indicies.Add(offset + 1);
                 indicies.Add(offset + 3);
                 indicies.Add(offset + 2);
+
+                roughness += 0.01f;
             }
 
             vert2d.Add(new Vector2(0, -1000));
@@ -91,7 +93,6 @@ public class LandscapeGen : MonoBehaviour {
             go.GetComponent<MeshRenderer>().material = ground;
 
             go.GetComponent<PolygonCollider2D>().points = vert2d.ToArray();
-            roughness += 0.15f;
         }
 	}
 }
