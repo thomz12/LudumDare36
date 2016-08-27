@@ -20,6 +20,7 @@ public class TechTree : MonoBehaviour {
 
         AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerEnter, OnPointerEnter);
         AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerExit, OnPointerExit);
+        AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnPointerClick);
     }
 
     public static void AddEventTriggerListener(EventTrigger trigger, EventTriggerType eventType, System.Action<BaseEventData> callback)
@@ -29,6 +30,12 @@ public class TechTree : MonoBehaviour {
         entry.callback = new EventTrigger.TriggerEvent();
         entry.callback.AddListener(new UnityEngine.Events.UnityAction<BaseEventData>(callback));
         trigger.triggers.Add(entry);
+    }
+
+    public void OnPointerClick(BaseEventData data)
+    {
+        // enough tech?
+        bought = true;
     }
 
     public void OnPointerExit(BaseEventData data)
@@ -78,6 +85,11 @@ public class TechTree : MonoBehaviour {
         if(unlocked)
         {
             GetComponentInChildren<Image>().color = new Color(101 / 255f, 255 / 255f, 102 / 255f);
+        }
+
+        if(bought)
+        {
+            GetComponentInChildren<Image>().color = new Color(255 / 255f, 255 / 255f, 255 / 255f);
         }
 	}
 }

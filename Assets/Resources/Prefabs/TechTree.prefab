@@ -296,7 +296,7 @@ MonoBehaviour:
   - {fileID: 114000010782532154}
   unlocked: 0
   bought: 0
-  desc: 
+  desc: A tool to kill those pesky animals!
 --- !u!114 &114000010217302514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -354,7 +354,7 @@ MonoBehaviour:
   - {fileID: 114000010782532154}
   unlocked: 0
   bought: 0
-  desc: 
+  desc: Ooooh fire....
 --- !u!114 &114000010782532154
 MonoBehaviour:
   m_ObjectHideFlags: 1
