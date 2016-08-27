@@ -1,12 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
     public enum State { MENU, PLAY, UPGRADE};
-    public float tech;
+    private float _tech;
     public int score;
     public State GameState;
 
+    public float getTech()
+    {
+        return _tech;
+    }
+    public void setTech(float change)
+    {
+        _tech += change;
+    }
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -28,3 +37,4 @@ public class GameManager : MonoBehaviour {
         
     }
 }
+

@@ -37,9 +37,10 @@ public class TechTree : MonoBehaviour {
         if (bought || !unlocked)
             return;
 
-        if (GameManager.Instance.tech >= cost)
+        if (GameManager.Instance.getTech() >= cost)
         {
-            GameManager.Instance.tech -= cost;
+            GameManager.Instance.setTech(-cost);
+            GameObject.FindGameObjectWithTag("UpgradeMenu_tech").GetComponent<Text>().text = "Tech Points: " + GameManager.Instance.getTech();
             bought = true;
         }
     }
@@ -91,7 +92,7 @@ public class TechTree : MonoBehaviour {
         if(unlocked)
         {
             GetComponentInChildren<Image>().color = new Color(101 / 255f, 255 / 255f, 102 / 255f);
-            if (GameManager.Instance.tech < cost)
+            if (GameManager.Instance.getTech() < cost)
             {
                 GetComponentInChildren<Image>().color = new Color(255 / 255f, 255 / 255f, 102 / 255f);
             }

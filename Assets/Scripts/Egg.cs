@@ -29,6 +29,7 @@ public class Egg : MonoBehaviour {
         if(coll.gameObject.tag == "Ground" && (GameManager.Instance.GameState == GameManager.State.PLAY))
         {
             GameManager.Instance.GameState = GameManager.State.UPGRADE;
+            Score.text = "";
             this.GetComponent<PolygonCollider2D>().enabled = false;
             this.GetComponent<SpriteRenderer>().enabled = false;
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>().Target = null;

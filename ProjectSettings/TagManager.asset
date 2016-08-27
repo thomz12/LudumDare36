@@ -12,6 +12,7 @@ TagManager:
   - GameOver_points
   - GameOver_tech
   - GameOver_techtotal
+  - UpgradeMenu_tech
   layers:
   - Default
   - TransparentFX

@@ -8,8 +8,8 @@ public class GameOver : MonoBehaviour {
     {
         GameObject.FindGameObjectWithTag("GameOver_points").GetComponent<Text>().text = "You got " + GameManager.Instance.score + "m";
         GameObject.FindGameObjectWithTag("GameOver_tech").GetComponent<Text>().text = "You earned " + (float)GameManager.Instance.score/10 + " Tech";
-        GameManager.Instance.tech += ((float)GameManager.Instance.score / 10);
-        GameObject.FindGameObjectWithTag("GameOver_techtotal").GetComponent<Text>().text = "Total Tech " + (float)GameManager.Instance.tech+ " Tech";
+        GameManager.Instance.setTech((float)GameManager.Instance.score / 10);
+        GameObject.FindGameObjectWithTag("GameOver_techtotal").GetComponent<Text>().text = "Total Tech " + (float)GameManager.Instance.getTech()+ " Tech";
 
     }
 
@@ -23,6 +23,7 @@ public class GameOver : MonoBehaviour {
     {
         GameObject go = GameObject.FindWithTag("TechTree");
         go.GetComponent<TechMenu>().On = true;
+        GameObject.FindGameObjectWithTag("UpgradeMenu_tech").GetComponent<Text>().text = "Tech Points: " + GameManager.Instance.getTech();
     }
 
     public void ClickBack()

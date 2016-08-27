@@ -24,7 +24,7 @@ public class TechMenu : MonoBehaviour {
 	void Start ()
     {
         transform.parent.GetComponent<Canvas>().enabled = on;
-	}
+    }
 
     void TurnOn(bool onoff)
     {
