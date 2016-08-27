@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Egg : MonoBehaviour {
 
-    public GameObject EggTop,
-                      EggBottom;
+    public GameObject EggTop;
+    public GameObject EggBottom;
+
+    public Text Score;
+    private float maxScore;
 
     // Use this for initialization
     void Start () {
@@ -13,8 +17,9 @@ public class Egg : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
-	}
+        maxScore = maxScore > Mathf.Floor(this.gameObject.transform.position.x) ? maxScore : Mathf.Floor(this.gameObject.transform.position.x);
+        Score.text = maxScore.ToString();
+    }
 
     public void OnCollisionEnter2D(Collision2D coll)
     {
