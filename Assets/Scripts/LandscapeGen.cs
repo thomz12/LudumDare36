@@ -73,7 +73,7 @@ public class LandscapeGen : MonoBehaviour {
                 indicies.Add(offset + 3);
                 indicies.Add(offset + 2);
 
-                roughness += 0.01f;
+                roughness += 0.001f;
             }
 
             vert2d.Add(new Vector2(0, -1000));

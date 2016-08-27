@@ -180,7 +180,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013363225448}
   - 212: {fileID: 212000013590645366}
-  - 50: {fileID: 50000011533668052}
   m_Layer: 11
   m_Name: CavemanTorso
   m_TagString: Untagged
@@ -212,6 +211,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011142312124}
   - 212: {fileID: 212000012058576320}
+  - 61: {fileID: 61000014025640420}
   m_Layer: 11
   m_Name: CavemanLowerArm
   m_TagString: Untagged
@@ -243,6 +243,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013839246196}
   - 212: {fileID: 212000013905307054}
+  - 61: {fileID: 61000013432456610}
   m_Layer: 11
   m_Name: CavemanLowerArm
   m_TagString: Untagged
@@ -607,23 +608,6 @@ Transform:
   - {fileID: 4000011057030536}
   m_Father: {fileID: 4000013363225448}
   m_RootOrder: 1
---- !u!50 &50000011533668052
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011994675902}
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!50 &50000012435706184
 Rigidbody2D:
   serializedVersion: 2
@@ -649,7 +633,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1000010359391564}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a71d3a9755fcbe0408aaea2325ab4d82, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -1.96}
@@ -669,6 +653,34 @@ BoxCollider2D:
   m_Offset: {x: -0.005984187, y: -0.33288598}
   serializedVersion: 2
   m_Size: {x: 0.5676017, y: 3.231635}
+--- !u!61 &61000013432456610
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012952450496}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.033704534, y: -0.3650829}
+  serializedVersion: 2
+  m_Size: {x: 0.036672883, y: 0.1707332}
+--- !u!61 &61000014025640420
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012363585954}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.03956704, y: -0.36543983}
+  serializedVersion: 2
+  m_Size: {x: 0.032966677, y: 0.17073317}
 --- !u!95 &95000012033212980
 Animator:
   serializedVersion: 3
@@ -697,7 +709,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7b1f28933946a438c09232aec5d47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 15000
+  maxSpeed: 3
+  sprintMultiplier: 1.75
+  deacceleration: 5
 --- !u!212 &212000011005833158
 SpriteRenderer:
   m_ObjectHideFlags: 1
