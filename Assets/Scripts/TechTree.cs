@@ -42,7 +42,7 @@ public class TechTree : MonoBehaviour {
         if (bought || !unlocked)
             return;
 
-        if (GameManager.Instance.getTech() >= cost*10)
+        if (GameManager.Instance.getTech() >= cost)
         {
             GameManager.Instance.setTech(-cost*10);
             GameObject.FindGameObjectWithTag("UpgradeMenu_tech").GetComponent<Text>().text = "Tech Points: " + GameManager.Instance.getTech();
