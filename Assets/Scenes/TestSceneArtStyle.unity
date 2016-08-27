@@ -248,10 +248,8 @@ Prefab:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
     - target: {fileID: 1000011815564606, guid: 592b12a3baa2ffc4b92a46e7e1c4a3b4, type: 2}
-      propertyPath: m_IsActive
+      propertyPath: m_IsActivem_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224000011625302888, guid: 592b12a3baa2ffc4b92a46e7e1c4a3b4,
@@ -369,7 +367,6 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 155
       objectReference: {fileID: 0}
->>>>>>> origin/master
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 835b857fde5c5884eaad46da1d6bc79b, type: 2}
   m_IsPrefabParent: 0
