@@ -23,6 +23,7 @@ GameObject:
   - 50: {fileID: 50000010864257756}
   - 60: {fileID: 60000010958588926}
   - 114: {fileID: 114000010211766678}
+  - 231: {fileID: 231000010224767544}
   m_Layer: 10
   m_Name: Egg
   m_TagString: Egg
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012380967278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.02, y: -0.262, z: 4.96698}
+  m_LocalPosition: {x: 42.09, y: -0.95, z: 4.96698}
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -196,3 +197,22 @@ SpriteRenderer:
   m_Color: {r: 0.3254902, g: 0.007843138, b: 0.20000002, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!231 &231000010224767544
+SpringJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012380967278}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: 200
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 1.7126875, y: 0.34145018}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.35637757
+  m_DampingRatio: 0
+  m_Frequency: 1
