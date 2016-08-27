@@ -13,6 +13,7 @@ TagManager:
   - GameOver_tech
   - GameOver_techtotal
   - UpgradeMenu_tech
+  - Egg
   layers:
   - Default
   - TransparentFX
@@ -23,9 +24,9 @@ TagManager:
   - 
   - 
   - WheelBorrow
-  - 
-  - 
-  - 
+  - Dino
+  - Egg
+  - Player
   - 
   - 
   - 
