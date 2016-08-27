@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000014227949364}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ArmFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - 114: {fileID: 114000010298832948}
   - 58: {fileID: 58000012842951168}
   - 233: {fileID: 233000011071344630}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Caveman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011176932008}
   - 212: {fileID: 212000013016471954}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanLowerLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010547837186}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012710590760}
   - 212: {fileID: 212000012785012956}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010310583742}
   - 212: {fileID: 212000011763332500}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanUpperArmBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011899162142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LegBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012140350872}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LegFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011190194404}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011276942530}
   - 212: {fileID: 212000013450816676}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanUpperLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   - 4: {fileID: 4000013363225448}
   - 212: {fileID: 212000013590645366}
   - 50: {fileID: 50000011533668052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanTorso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012607177208}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011142312124}
   - 212: {fileID: 212000012058576320}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanLowerArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012626912040}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ArmBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013839246196}
   - 212: {fileID: 212000013905307054}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanLowerArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010165920812}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013884023876}
   - 212: {fileID: 212000013593451822}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanUpperLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011057030536}
   - 212: {fileID: 212000011005833158}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanUpperArmFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000014122812940}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013707346418}
   - 212: {fileID: 212000012481469764}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CavemanLowerLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010359391564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -1.16, z: 5}
+  m_LocalPosition: {x: 40.72, y: -1.16, z: 5}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -501,7 +501,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012569950542}
   m_LocalRotation: {x: 0, y: -0, z: 0.024432093, w: -0.9997015}
-  m_LocalPosition: {x: 0.089, y: 0.335, z: 0}
+  m_LocalPosition: {x: 0.089, y: 0.335, z: -0.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 357.2}
   m_Children:
@@ -600,7 +600,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010206631068}
   m_LocalRotation: {x: 0, y: 0, z: 0.5210841, w: 0.8535054}
-  m_LocalPosition: {x: -0.143, y: 0.246, z: 0}
+  m_LocalPosition: {x: -0.143, y: 0.246, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 62.81}
   m_Children:
@@ -1042,7 +1042,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.99878037, y: -0.33748174}
-  m_ConnectedAnchor: {x: 0.22993861, y: 0.30200964}
+  m_ConnectedAnchor: {x: 0.17527425, y: 0.30200964}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
