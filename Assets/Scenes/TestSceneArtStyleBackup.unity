@@ -840,6 +840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tech: 0
+  score: 0
   GameState: 1
 --- !u!1001 &1861659984
 Prefab:
