@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour {
     {
         GameObject.FindGameObjectWithTag("GameOver_points").GetComponent<Text>().text = "You got " + GameManager.Instance.score + "m";
         GameObject.FindGameObjectWithTag("GameOver_tech").GetComponent<Text>().text = "You earned " + (float)GameManager.Instance.score/10 + " Tech";
-        GameManager.Instance.setTech((float)GameManager.Instance.score / 10);
+        GameManager.Instance.setTech(GameManager.Instance.score);
         GameObject.FindGameObjectWithTag("GameOver_techtotal").GetComponent<Text>().text = "Total Tech " + (float)GameManager.Instance.getTech()+ " Tech";
 
     }

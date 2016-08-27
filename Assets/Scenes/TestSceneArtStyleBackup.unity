@@ -1083,6 +1083,11 @@ Prefab:
       propertyPath: unlock.Array.data[0]
       value: 
       objectReference: {fileID: 1917397601}
+    - target: {fileID: 114000013482189380, guid: 42fa112c775b30842b41e15805c1ee79,
+        type: 2}
+      propertyPath: techTreeName
+      value: Shooting Spear
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42fa112c775b30842b41e15805c1ee79, type: 2}
   m_IsPrefabParent: 0

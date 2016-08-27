@@ -4,15 +4,30 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
     public enum State { MENU, PLAY, UPGRADE};
-    private float _tech;
+
+    private int _tech;
+    private int _upgrades;
+
     public int score;
     public State GameState;
+    
+
+    public void setUpgrade(int u)
+    {
+        _upgrades += (int)Mathf.Pow(2,u);
+        Debug.Log(_upgrades);
+    } 
+
+    public bool getUpgrade(int u)
+    {
+        return (_upgrades & (int)Mathf.Pow(2,u)) == (int)Mathf.Pow(2, u);
+    }
 
     public float getTech()
     {
-        return _tech;
+        return (float)_tech/10;
     }
-    public void setTech(float change)
+    public void setTech(int change)
     {
         _tech += change;
     }

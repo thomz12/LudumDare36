@@ -11,16 +11,21 @@ public class TechTree : MonoBehaviour {
     public bool unlocked;
     public bool bought;
     public string desc;
+    public int nr;
 
     private bool _tooltip;
 
 	void Start ()
     {
         GetComponentInChildren<Text>().text = techTreeName + "\n" + cost + " Tech";
-
+        
         AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerEnter, OnPointerEnter);
         AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerExit, OnPointerExit);
         AddEventTriggerListener(GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnPointerClick);
+        if(GameManager.Instance.getUpgrade(nr))
+        {
+            bought = true;
+        }
     }
 
     public static void AddEventTriggerListener(EventTrigger trigger, EventTriggerType eventType, System.Action<BaseEventData> callback)
@@ -42,6 +47,7 @@ public class TechTree : MonoBehaviour {
             GameManager.Instance.setTech(-cost);
             GameObject.FindGameObjectWithTag("UpgradeMenu_tech").GetComponent<Text>().text = "Tech Points: " + GameManager.Instance.getTech();
             bought = true;
+            GameManager.Instance.setUpgrade(nr);
         }
     }
 
