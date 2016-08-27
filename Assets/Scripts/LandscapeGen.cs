@@ -11,6 +11,8 @@ public class LandscapeGen : MonoBehaviour {
     public int roughness;
     public const float size = 480;
 
+    private float oldHeight = -2.70f;
+
 	// Use this for initialization
 	void Start () {
 	    
@@ -27,8 +29,6 @@ public class LandscapeGen : MonoBehaviour {
 
             Mesh m = new Mesh();
 
-            int prevHeight = 10;
-
             float stepsize = size / detail;
 
             List<Vector3> verts = new List<Vector3>();
@@ -36,14 +36,14 @@ public class LandscapeGen : MonoBehaviour {
 
             for (int i = 0; i < detail; i++)
             {
-                int newHeight = Random.Range(-10, 10);
+                float newHeight = Random.Range(-10f, 10f);
 
-                verts.Add(new Vector3(i * stepsize, prevHeight, 0));
+                verts.Add(new Vector3(i * stepsize, oldHeight, 0));
                 verts.Add(new Vector3(i * stepsize, -10, 0));
                 verts.Add(new Vector3(i * stepsize + stepsize, newHeight, 0));
                 verts.Add(new Vector3(i * stepsize + stepsize, -10, 0));
 
-                prevHeight = newHeight;
+                oldHeight = newHeight;
 
                 int offset = i * 4;
 
