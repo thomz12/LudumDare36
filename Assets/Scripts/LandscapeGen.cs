@@ -8,9 +8,9 @@ public class LandscapeGen : MonoBehaviour {
     private int spawnCount = 0;
 
     public int detail;
-    public int roughness;
-    public int minHeight;
-    public int maxHeight;
+    public float roughness;
+    public float minHeight;
+    public float maxHeight;
 
     public const float size = 100;
 
@@ -50,32 +50,36 @@ public class LandscapeGen : MonoBehaviour {
                     minHeight = maxHeight;
 
                 vert2d.Add(new Vector2(i * stepsize, oldHeight));
-                vert2d.Add(new Vector2(i * stepsize, -10));
                 vert2d.Add(new Vector2(i * stepsize + stepsize, newHeight));
+                vert2d.Add(new Vector2(i * stepsize, -10));
                 vert2d.Add(new Vector2(i * stepsize + stepsize, -10));
 
-                verts.Add(vert2d[i]);
-                verts.Add(vert2d[i + 1]);
-                verts.Add(vert2d[i + 2]);
-                verts.Add(vert2d[i + 3]);
 
                 oldHeight = newHeight;
 
                 int offset = i * 4;
 
-                indicies.Add(offset + 2);
-                indicies.Add(offset + 1);
+                verts.Add(vert2d[offset]);
+                verts.Add(vert2d[offset + 1]);
+                verts.Add(vert2d[offset + 2]);
+                verts.Add(vert2d[offset + 3]);
+
                 indicies.Add(offset + 0);
-                indicies.Add(offset + 2);
-                indicies.Add(offset + 3);
                 indicies.Add(offset + 1);
+                indicies.Add(offset + 2);
+                indicies.Add(offset + 1);
+                indicies.Add(offset + 3);
+                indicies.Add(offset + 2);
             }
+
+             vert2d.Add(new Vector2(0, -1000));
 
             m.vertices = verts.ToArray();
             m.triangles = indicies.ToArray();
 
             go = (GameObject)Instantiate(new GameObject());
             go.name = "special";
+            go.transform.tag = "Ground";
             go.AddComponent<MeshRenderer>();
             go.AddComponent<MeshFilter>();
             go.GetComponent<MeshFilter>().mesh = m;
