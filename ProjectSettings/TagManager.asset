@@ -15,6 +15,7 @@ TagManager:
   - UpgradeMenu_tech
   - Egg
   - WheelBorrow
+  - Spear
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Egg
   - Player
   - WheelBorrow
-  - 
+  - Spear
   - 
   - 
   - 

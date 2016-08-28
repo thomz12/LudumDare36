@@ -54,7 +54,7 @@ GameObject:
   - 4: {fileID: 4000011105445520}
   - 50: {fileID: 50000011200814790}
   - 235: {fileID: 235000011571723998}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: WheelBorrow
   m_TagString: WheelBorrow
   m_Icon: {fileID: 0}
