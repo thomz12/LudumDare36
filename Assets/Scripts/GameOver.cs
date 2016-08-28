@@ -20,7 +20,7 @@ public class GameOver : MonoBehaviour {
     public void ClickRestart()
     {
         GameManager.Instance.GameState = GameManager.State.PLAY;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void ClickSpend()

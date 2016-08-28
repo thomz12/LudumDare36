@@ -21,7 +21,7 @@ public class SpearScript : MonoBehaviour {
 
     void Update()
     {
-        if (!_isFired && Input.GetMouseButtonUp(0))
+        if (!_isFired && Input.GetMouseButtonUp(0) && GameManager.Instance.getUpgrade(3))
         {
             _isFired = true;
             pos = transform.localPosition;
