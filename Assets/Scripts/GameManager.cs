@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour {
     public void setTech(int change)
     {
         _tech += change;
-        if (getUpgrade(5))
+        if (getUpgrade(5) && change > 0)
             _tech += change;
     }
 
