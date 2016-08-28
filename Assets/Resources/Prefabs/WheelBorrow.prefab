@@ -152,10 +152,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012305787512}
-  - {fileID: 4000012576750544}
   - {fileID: 4000012236220390}
   - {fileID: 4000011421323048}
   - {fileID: 4000012197871138}
+  - {fileID: 4000012576750544}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &4000011421323048
@@ -171,7 +171,7 @@ Transform:
   m_Children:
   - {fileID: 4000010749501552}
   m_Father: {fileID: 4000011105445520}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &4000012197871138
 Transform:
   m_ObjectHideFlags: 1
@@ -184,7 +184,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.08}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &4000012236220390
 Transform:
   m_ObjectHideFlags: 1
@@ -197,7 +197,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &4000012305787512
 Transform:
   m_ObjectHideFlags: 1
@@ -223,7 +223,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.9}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!50 &50000010945533372
 Rigidbody2D:
   serializedVersion: 2
