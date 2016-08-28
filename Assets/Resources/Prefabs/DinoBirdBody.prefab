@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013110843504}
   - 212: {fileID: 212000010983101240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DinoBirdWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010205185680}
   - 212: {fileID: 212000011664167080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DinoBirdBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013614253702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WingRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011224440420}
   - 114: {fileID: 114000010386611774}
-  m_Layer: 0
+  - 61: {fileID: 61000013453332572}
+  m_Layer: 9
   m_Name: EggCanon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +84,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011088316448}
   - 212: {fileID: 212000010877557542}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SmallDinoTail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +100,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012402023820}
   - 95: {fileID: 95000010968516714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DinoBirdBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +116,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012732796004}
   - 212: {fileID: 212000010829832706}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DinoBirdHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,6 +220,20 @@ Transform:
   - {fileID: 4000013110843504}
   m_Father: {fileID: 4000012402023820}
   m_RootOrder: 1
+--- !u!61 &61000013453332572
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012232771544}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.36557457, y: -0.8006362}
+  serializedVersion: 2
+  m_Size: {x: 3.3104305, y: 1.4591556}
 --- !u!95 &95000010968516714
 Animator:
   serializedVersion: 3

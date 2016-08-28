@@ -5,16 +5,28 @@ public class EggCanon : MonoBehaviour {
 
     public GameObject egg;
     public bool shot = false;
+    private bool dead;
 	// Use this for initialization
 	void Start () {
-
+        dead = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if(Vector3.Distance(GameObject.FindWithTag("Player").transform.position, transform.position) < 10)
             if(!shot)
-                StartCoroutine(Shoot());
+                if(!dead)
+                    StartCoroutine(Shoot());
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "Spear")
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.transform.parent.gameObject.AddComponent<Rigidbody2D>();
+            dead = true;
+        }
     }
 
     IEnumerator Shoot()

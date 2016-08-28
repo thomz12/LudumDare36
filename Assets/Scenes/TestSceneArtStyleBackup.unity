@@ -495,10 +495,6 @@ Prefab:
       propertyPath: m_Name
       value: Landscapes
       objectReference: {fileID: 0}
-    - target: {fileID: 1000013541062662, guid: f297eaecc13692e4f9725988ce987d5e, type: 2}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f297eaecc13692e4f9725988ce987d5e, type: 2}
   m_IsPrefabParent: 0
@@ -780,7 +776,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013816735750, guid: bf5b8400e4eec0c4fb41592fedd30a80, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf5b8400e4eec0c4fb41592fedd30a80, type: 2}
@@ -982,6 +978,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 755836595}
+    - target: {fileID: 223000010863048880, guid: 42fa112c775b30842b41e15805c1ee79,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012053555098, guid: 42fa112c775b30842b41e15805c1ee79,
+        type: 2}
+      propertyPath: desc
+      value: Metals are required for making shooting spears!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011780767870, guid: 42fa112c775b30842b41e15805c1ee79,
+        type: 2}
+      propertyPath: desc
+      value: A tool to kill tiny dinosaurs!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013482189380, guid: 42fa112c775b30842b41e15805c1ee79,
+        type: 2}
+      propertyPath: desc
+      value: Handy tool for taking down flying creatures! Aim and shoot with the mouse
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42fa112c775b30842b41e15805c1ee79, type: 2}
   m_IsPrefabParent: 0
