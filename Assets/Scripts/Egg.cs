@@ -10,18 +10,23 @@ public class Egg : MonoBehaviour {
     public Text Score;
     private float maxScore;
 
+    public float startPos;
+
     // Use this for initialization
     void Start () {
-	
+        startPos = transform.position.x;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (GameManager.Instance.GameState == GameManager.State.PLAY)
         {
-            maxScore = maxScore > Mathf.Floor(this.gameObject.transform.position.x) ? maxScore : Mathf.Floor(this.gameObject.transform.position.x);
+            maxScore = maxScore > Mathf.Floor(this.gameObject.transform.position.x - startPos) ? maxScore : Mathf.Floor(this.gameObject.transform.position.x - startPos);
             Score.text = maxScore.ToString();
         }
+        if (transform.position.x > 50)
+            if (GetComponent<SpringJoint2D>())
+                GetComponent<SpringJoint2D>().enabled = false;
     }
 
     public void OnCollisionEnter2D(Collision2D coll)

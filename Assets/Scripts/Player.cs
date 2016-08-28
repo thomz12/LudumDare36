@@ -16,8 +16,8 @@ public class Player : MonoBehaviour {
         if(!GameManager.Instance.getUpgrade(0))
         {
             Destroy(GameObject.FindWithTag("WheelBorrow"));
-            GameObject.FindWithTag("Egg").transform.position = new Vector3(transform.position.x, transform.position.y + 2, transform.position.z);
-            GameObject.FindWithTag("Egg").layer = gameObject.layer;
+            GameObject.FindWithTag("Egg").transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+            GameObject.FindWithTag("Egg").layer = 0;
             transform.GetChild(0).GetChild(1).transform.eulerAngles = new Vector3(0, 0, 190);
             transform.GetChild(0).GetChild(2).transform.eulerAngles = new Vector3(0, 0, 460);
         }

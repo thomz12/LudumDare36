@@ -335,7 +335,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012959970400}
-  m_LocalRotation: {x: 0, y: 0, z: -0.26202065, w: 0.96506226}
+  m_LocalRotation: {x: 0, y: 0, z: -0.33183223, w: 0.94333845}
   m_LocalPosition: {x: 0.215, y: -0.315, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.3}
@@ -431,7 +431,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011787595580}
-  m_LocalRotation: {x: 0, y: 0, z: -0.26202065, w: 0.96506226}
+  m_LocalRotation: {x: 0, y: 0, z: -0.78537697, w: 0.6190178}
   m_LocalPosition: {x: 0.215, y: -0.315, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -33.954002}
@@ -459,7 +459,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011394773002}
-  m_LocalRotation: {x: -0, y: -0, z: -0.33504048, w: 0.94220376}
+  m_LocalRotation: {x: 0, y: 0, z: -0.2774282, w: 0.9607464}
   m_LocalPosition: {x: -0.014, y: -0.61, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -71.27}
@@ -473,7 +473,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011521282920}
-  m_LocalRotation: {x: 0, y: 0, z: -0.33504048, w: 0.94220376}
+  m_LocalRotation: {x: 0, y: 0, z: -0.11721985, w: 0.993106}
   m_LocalPosition: {x: -0.143, y: -0.611, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.95}
@@ -529,7 +529,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011994675902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.058981687, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -616,7 +616,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010359391564}
   m_UseAutoMass: 0
-  m_Mass: 80
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -664,9 +664,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.033704534, y: -0.3650829}
+  m_Offset: {x: -0.0337091, y: -0.3064025}
   serializedVersion: 2
-  m_Size: {x: 0.036672883, y: 0.1707332}
+  m_Size: {x: 0.03667288, y: 0.053429905}
 --- !u!61 &61000014025640420
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -678,9 +678,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.03956704, y: -0.36543983}
+  m_Offset: {x: -0.0395578, y: -0.3106595}
   serializedVersion: 2
-  m_Size: {x: 0.032966677, y: 0.17073317}
+  m_Size: {x: 0.032966673, y: 0.060904965}
 --- !u!95 &95000012033212980
 Animator:
   serializedVersion: 3
@@ -709,8 +709,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7b1f28933946a438c09232aec5d47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15000
-  maxSpeed: 3
+  speed: 25000
+  maxSpeed: 1
   sprintMultiplier: 1.75
   deacceleration: 5
 --- !u!212 &212000011005833158
@@ -774,7 +774,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7c65a2e99d961ea44928ab126e171154, type: 3}
   m_Color: {r: 0.33333334, g: 0, b: 0.20000002, a: 1}
   m_FlipX: 0
@@ -873,7 +873,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: b0e3a019e09b3b94980d42d105f38ef3, type: 3}
   m_Color: {r: 0.372, g: 0, b: 0.22229265, a: 1}
   m_FlipX: 0
@@ -1038,7 +1038,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 989db201a8404f24391fcf3e46d7d9b6, type: 3}
   m_Color: {r: 0.335, g: 0, b: 0.19816905, a: 1}
   m_FlipX: 0

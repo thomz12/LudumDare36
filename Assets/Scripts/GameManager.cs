@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour {
     public void setTech(int change)
     {
         _tech += change;
+        if (getUpgrade(5))
+            _tech += change;
     }
 
     private static GameManager _instance;

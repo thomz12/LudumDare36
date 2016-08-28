@@ -7,10 +7,13 @@ public class GameOver : MonoBehaviour {
 
     public void Start()
     {
-        GameObject.FindGameObjectWithTag("GameOver_points").GetComponent<Text>().text = "You got " + GameManager.Instance.score + "m";
-        GameObject.FindGameObjectWithTag("GameOver_tech").GetComponent<Text>().text = "You earned " + (float)GameManager.Instance.score/10 + " Tech";
+        GameObject.FindGameObjectWithTag("GameOver_points").GetComponent<Text>().text = "You got " + GameManager.Instance.score + "m far";
+        GameObject.FindGameObjectWithTag("GameOver_tech").GetComponent<Text>().text = "You earned " + (float)GameManager.Instance.score/10 + " Tech!";
+        if(GameManager.Instance.getUpgrade(5))
+            GameObject.FindGameObjectWithTag("GameOver_tech").GetComponent<Text>().text = "You earned " + ((float)GameManager.Instance.score / 10 * 2) + " Tech!";
+
         GameManager.Instance.setTech(GameManager.Instance.score);
-        GameObject.FindGameObjectWithTag("GameOver_techtotal").GetComponent<Text>().text = "Total Tech " + (float)GameManager.Instance.getTech()+ " Tech";
+        GameObject.FindGameObjectWithTag("GameOver_techtotal").GetComponent<Text>().text = "Total Tech: " + (float)GameManager.Instance.getTech();
 
     }
 

@@ -160,10 +160,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013135394750}
-  m_LocalRotation: {x: 0, y: 0, z: 0.28175536, w: 0.95948625}
+  m_LocalRotation: {x: 0, y: 0, z: 0.35901958, w: 0.93333006}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.35, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32.73}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.08}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
   m_RootOrder: 2
@@ -186,10 +186,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013147672880}
-  m_LocalRotation: {x: 0, y: 0, z: -0.27781767, w: 0.9606338}
+  m_LocalRotation: {x: 0, y: 0, z: -0.36568916, w: 0.9307371}
   m_LocalPosition: {x: 2.491, y: 0.171, z: 0}
   m_LocalScale: {x: 0.35, y: 0.99999976, z: 1.0000001}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -32.26}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.9}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
   m_RootOrder: 3
@@ -252,9 +252,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.23460731, y: -0.50106096}
+  m_Offset: {x: 0.22892088, y: -0.70245755}
   serializedVersion: 2
-  m_Size: {x: 3.5758746, y: 0.3952668}
+  m_Size: {x: 2.4252462, y: 0.055968445}
 --- !u!61 &61000013950896940
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -266,9 +266,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 1.2185918, y: 0.19891037}
+  m_Offset: {x: 1.2458178, y: 0.16315722}
   serializedVersion: 2
-  m_Size: {x: 1.3150694, y: 0.8891739}
+  m_Size: {x: 0.94826823, y: 0.35931107}
 --- !u!61 &61000014183326726
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -280,9 +280,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 1.2185891, y: -0.08129764}
+  m_Offset: {x: 0.97656906, y: -0.34593448}
   serializedVersion: 2
-  m_Size: {x: 1.3150696, y: 0.795369}
+  m_Size: {x: 1.1228554, y: 0.35083526}
 --- !u!212 &212000010925274770
 SpriteRenderer:
   m_ObjectHideFlags: 1
