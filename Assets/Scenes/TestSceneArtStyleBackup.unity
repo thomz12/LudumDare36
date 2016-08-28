@@ -620,8 +620,6 @@ Prefab:
       propertyPath: Score
       value: 
       objectReference: {fileID: 622871938}
-<<<<<<< HEAD
-=======
     - target: {fileID: 231000010224767544, guid: 41bc3e839d576f743ba8391e84e1dcf4,
         type: 2}
       propertyPath: m_Enabled
@@ -652,7 +650,6 @@ Prefab:
       propertyPath: m_Frequency
       value: 1
       objectReference: {fileID: 0}
->>>>>>> origin/master
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41bc3e839d576f743ba8391e84e1dcf4, type: 2}
   m_IsPrefabParent: 0
