@@ -103,6 +103,7 @@ GameObject:
   - 4: {fileID: 4000012305787512}
   - 212: {fileID: 212000013829878644}
   - 61: {fileID: 61000010620093216}
+  - 114: {fileID: 114000011592162836}
   m_Layer: 13
   m_Name: Spearingame
   m_TagString: Spear
@@ -328,6 +329,18 @@ BoxCollider2D:
   m_Offset: {x: 0.97656906, y: -0.34593448}
   serializedVersion: 2
   m_Size: {x: 1.1228554, y: 0.35083526}
+--- !u!114 &114000011592162836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014043464260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e589e9dd8cade543b87ef5efd1c9d86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reloadTime: 5
 --- !u!212 &212000010925274770
 SpriteRenderer:
   m_ObjectHideFlags: 1
