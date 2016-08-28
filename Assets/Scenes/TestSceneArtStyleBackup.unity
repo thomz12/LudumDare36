@@ -1326,7 +1326,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42fa112c775b30842b41e15805c1ee79, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD
 --- !u!1001 &1380788972
 Prefab:
   m_ObjectHideFlags: 0
@@ -1369,7 +1368,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3ef9c8568f2ce84dabef3c5e2b722c3, type: 2}
   m_IsPrefabParent: 0
-=======
 --- !u!1 &1452920013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,7 +1415,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011105445520, guid: 0ec0681244af34b4fb47c5e90d9d04e4,
     type: 2}
   m_PrefabInternal: {fileID: 709906625}
->>>>>>> origin/master
 --- !u!1001 &1861659984
 Prefab:
   m_ObjectHideFlags: 0
