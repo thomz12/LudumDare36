@@ -25,6 +25,9 @@ public class Player : MonoBehaviour {
 
         if (GameManager.Instance.getUpgrade(2))
             GameObject.FindWithTag("WheelBorrow").transform.GetChild(0).gameObject.SetActive(true);
+
+        if (GameManager.Instance.getUpgrade(7))
+            transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
     }
 	
 	// Update is called once per frame

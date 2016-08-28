@@ -101,8 +101,10 @@ public class LandscapeGen : MonoBehaviour {
 
             GameObject dino2spawn = Random.Range(0, 2) == 0 ? dinoBird : dinoSmall;
 
-            if(spawnCount != 1)
-               Instantiate(dino2spawn, new Vector3(go.transform.position.x, go.transform.position.y, go.transform.position.z), dino2spawn.transform.rotation);
+            if (spawnCount > 1)
+            {
+                Instantiate(dino2spawn, new Vector3(go.transform.position.x, go.transform.position.y + 4, go.transform.position.z), dino2spawn.transform.rotation);
+            }
         }
 	}
 }
