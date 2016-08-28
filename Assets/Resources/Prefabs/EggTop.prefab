@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000011702883850}
   - 60: {fileID: 60000010698116490}
   - 50: {fileID: 50000010810696158}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EggTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

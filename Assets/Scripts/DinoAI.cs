@@ -28,9 +28,7 @@ public class DinoAI : MonoBehaviour {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1500,3000));
         }
 
-        GameObject go = collision.collider.gameObject;
-
-        if(collision.gameObject.transform.tag == "Spear")
+        if(collision.gameObject.transform.tag == "WheelBorrow")
         {
             GetComponentInChildren<BoxCollider2D>().enabled = false;
             GetComponentInChildren<CircleCollider2D>().enabled = false;
