@@ -21,6 +21,9 @@ public class Player : MonoBehaviour {
             transform.GetChild(0).GetChild(1).transform.eulerAngles = new Vector3(0, 0, 190);
             transform.GetChild(0).GetChild(2).transform.eulerAngles = new Vector3(0, 0, 460);
         }
+
+        if (GameManager.Instance.getUpgrade(2))
+            GameObject.FindWithTag("WheelBorrow").transform.GetChild(0).gameObject.SetActive(true);
     }
 	
 	// Update is called once per frame
