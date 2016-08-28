@@ -12,6 +12,9 @@ public class LandscapeGen : MonoBehaviour {
     public float minHeight;
     public float maxHeight;
 
+    public GameObject dinoBird;
+    public GameObject dinoSmall;
+
     public const float size = 100;
 
     public Material ground;

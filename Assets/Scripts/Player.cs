@@ -20,6 +20,7 @@ public class Player : MonoBehaviour {
             GameObject.FindWithTag("Egg").layer = 0;
             transform.GetChild(0).GetChild(1).transform.eulerAngles = new Vector3(0, 0, 190);
             transform.GetChild(0).GetChild(2).transform.eulerAngles = new Vector3(0, 0, 460);
+            GameObject.FindWithTag("Egg").GetComponent<SpringJoint2D>().enabled = true;
         }
 
         if (GameManager.Instance.getUpgrade(2))
