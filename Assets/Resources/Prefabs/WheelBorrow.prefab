@@ -93,6 +93,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000014043464260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012305787512}
+  - 212: {fileID: 212000013829878644}
+  - 61: {fileID: 61000010620093216}
+  m_Layer: 13
+  m_Name: Spearingame
+  m_TagString: Spear
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1000014085590846
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,10 +151,11 @@ Transform:
   m_LocalScale: {x: 0.56706524, y: 0.56706524, z: 0.56706524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 4000012305787512}
+  - {fileID: 4000012576750544}
   - {fileID: 4000012236220390}
   - {fileID: 4000011421323048}
   - {fileID: 4000012197871138}
-  - {fileID: 4000012576750544}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &4000011421323048
@@ -153,7 +171,7 @@ Transform:
   m_Children:
   - {fileID: 4000010749501552}
   m_Father: {fileID: 4000011105445520}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!4 &4000012197871138
 Transform:
   m_ObjectHideFlags: 1
@@ -166,7 +184,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.08}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!4 &4000012236220390
 Transform:
   m_ObjectHideFlags: 1
@@ -177,6 +195,19 @@ Transform:
   m_LocalPosition: {x: 1.54, y: 0.54, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1.7634656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011105445520}
+  m_RootOrder: 2
+--- !u!4 &4000012305787512
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014043464260}
+  m_LocalRotation: {x: -0, y: -0, z: 0.076718986, w: 0.9970528}
+  m_LocalPosition: {x: 3.1099997, y: -0.25, z: 0}
+  m_LocalScale: {x: 0.5795772, y: 0.5795772, z: 0.5795772}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.8}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
   m_RootOrder: 0
@@ -192,7 +223,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.9}
   m_Children: []
   m_Father: {fileID: 4000011105445520}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!50 &50000010945533372
 Rigidbody2D:
   serializedVersion: 2
@@ -241,6 +272,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.68
+--- !u!61 &61000010620093216
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014043464260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 1.7768023, y: -0.033096083}
+  serializedVersion: 2
+  m_Size: {x: 1.4962726, y: 1.4103463}
 --- !u!61 &61000011860802512
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -314,6 +359,39 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 02488df6bd35c6e4baa8667a50edf979, type: 3}
   m_Color: {r: 0.37254903, g: 0, b: 0.22352943, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!212 &212000013829878644
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014043464260}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 24d8334ae80c9e44485f1c649aef671c, type: 3}
+  m_Color: {r: 0.18039216, g: 0.06666667, b: 0.1764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!212 &212000014123068430
