@@ -37,7 +37,7 @@ GameObject:
   - 20: {fileID: 20000010555666814}
   - 114: {fileID: 114000013013862956}
   - 114: {fileID: 114000014123806326}
-  - 114: {fileID: 114000010921732426}
+  - 81: {fileID: 81000014077117298}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012211409928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.8}
+  m_LocalPosition: {x: 38.34, y: 0, z: -3.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -136,20 +136,13 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!114 &114000010921732426
-MonoBehaviour:
+--- !u!81 &81000014077117298
+AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012211409928}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34382083ad114a07d000fbfb8d76c639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iterations: 2
-  blurSpread: 0.6
-  blurShader: {fileID: 4800000, guid: 57e6deea7c2924e22a5138e2b70bb4dc, type: 3}
+  m_Enabled: 1
 --- !u!114 &114000013013862956
 MonoBehaviour:
   m_ObjectHideFlags: 1
