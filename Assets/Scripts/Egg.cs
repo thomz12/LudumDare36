@@ -35,6 +35,7 @@ public class Egg : MonoBehaviour {
         {
             GameManager.Instance.GameState = GameManager.State.UPGRADE;
             Score.text = "";
+            this.GetComponent<AudioSource>().Play();
             this.GetComponent<PolygonCollider2D>().enabled = false;
             this.GetComponent<SpriteRenderer>().enabled = false;
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>().Target = null;
