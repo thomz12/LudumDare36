@@ -1295,6 +1295,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 82000012955489090, guid: c3ef9c8568f2ce84dabef3c5e2b722c3,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012955489090, guid: c3ef9c8568f2ce84dabef3c5e2b722c3,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bb9dad9eec081a747aae2c38fe50f964, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3ef9c8568f2ce84dabef3c5e2b722c3, type: 2}
   m_IsPrefabParent: 0
