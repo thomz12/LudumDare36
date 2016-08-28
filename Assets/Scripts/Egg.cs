@@ -31,7 +31,7 @@ public class Egg : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D coll)
     {
-        if(coll.gameObject.tag == "Ground" && (GameManager.Instance.GameState == GameManager.State.PLAY))
+        if((coll.gameObject.tag == "Dino" || coll.gameObject.tag == "Ground") && (GameManager.Instance.GameState == GameManager.State.PLAY))
         {
             GameManager.Instance.GameState = GameManager.State.UPGRADE;
             Score.text = "";

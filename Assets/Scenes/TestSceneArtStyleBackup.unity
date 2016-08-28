@@ -778,6 +778,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013816735750, guid: bf5b8400e4eec0c4fb41592fedd30a80, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf5b8400e4eec0c4fb41592fedd30a80, type: 2}
   m_IsPrefabParent: 0
@@ -819,6 +823,10 @@ Prefab:
     - target: {fileID: 4000011573412194, guid: b48e490f71c9ee8449a23a1237fb0f24, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011811461830, guid: b48e490f71c9ee8449a23a1237fb0f24, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b48e490f71c9ee8449a23a1237fb0f24, type: 2}
@@ -868,9 +876,9 @@ MonoBehaviour:
   detail: 250
   roughness: 0
   minHeight: -4
-  maxHeight: 10
-  dinoBird: {fileID: 0}
-  dinoSmall: {fileID: 0}
+  maxHeight: 5
+  dinoBird: {fileID: 1000013816735750, guid: bf5b8400e4eec0c4fb41592fedd30a80, type: 2}
+  dinoSmall: {fileID: 1000011811461830, guid: b48e490f71c9ee8449a23a1237fb0f24, type: 2}
   ground: {fileID: 2100000, guid: 46cb232885276fc4ba6f60c6f8287658, type: 2}
 --- !u!1001 &1230162156
 Prefab:
@@ -974,6 +982,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 755836595}
+    - target: {fileID: 114000010451459252, guid: 42fa112c775b30842b41e15805c1ee79,
+        type: 2}
+      propertyPath: desc
+      value: Fire makes things go faster! Use Left Shift to sprint!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42fa112c775b30842b41e15805c1ee79, type: 2}
   m_IsPrefabParent: 0
@@ -1015,6 +1028,11 @@ Prefab:
     - target: {fileID: 4000011623792038, guid: c3ef9c8568f2ce84dabef3c5e2b722c3, type: 2}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012955489090, guid: c3ef9c8568f2ce84dabef3c5e2b722c3,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3ef9c8568f2ce84dabef3c5e2b722c3, type: 2}

@@ -52,7 +52,7 @@ public class LandscapeGen : MonoBehaviour {
                 if (newHeight < minHeight)
                     newHeight = minHeight;
                 if (newHeight > maxHeight)
-                    minHeight = maxHeight;
+                    newHeight = maxHeight;
 
                 vert2d.Add(new Vector2(i * stepsize, oldHeight));
                 vert2d.Add(new Vector2(i * stepsize + stepsize, newHeight));
@@ -76,8 +76,12 @@ public class LandscapeGen : MonoBehaviour {
                 indicies.Add(offset + 3);
                 indicies.Add(offset + 2);
 
-                roughness += 0.001f;
+                roughness += 0.00075f;
+
+                if (roughness > .5f)
+                    roughness = .5f;
             }
+
 
             vert2d.Add(new Vector2(0, -1000));
 
@@ -92,10 +96,13 @@ public class LandscapeGen : MonoBehaviour {
             go.GetComponent<MeshFilter>().mesh = m;
             go.transform.position = new Vector3(size * spawnCount - size / 2, 0, 5);
             go.AddComponent<PolygonCollider2D>();
-
             go.GetComponent<MeshRenderer>().material = ground;
-
             go.GetComponent<PolygonCollider2D>().points = vert2d.ToArray();
+
+            GameObject dino2spawn = Random.Range(0, 2) == 0 ? dinoBird : dinoSmall;
+
+            if(spawnCount != 1)
+               Instantiate(dino2spawn, new Vector3(go.transform.position.x, go.transform.position.y, go.transform.position.z), dino2spawn.transform.rotation);
         }
 	}
 }

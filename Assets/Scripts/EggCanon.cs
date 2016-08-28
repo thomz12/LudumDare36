@@ -27,6 +27,8 @@ public class EggCanon : MonoBehaviour {
         go.transform.tag = "Ground";
         Destroy(go.GetComponent<SpringJoint2D>());
         Destroy(go.GetComponent<Egg>());
+        go.AddComponent<SuicideScript>();
+        go.GetComponent<SuicideScript>().ttl = 8;
         shot = false;
     }
 }

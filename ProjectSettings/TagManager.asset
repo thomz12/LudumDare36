@@ -16,6 +16,7 @@ TagManager:
   - Egg
   - WheelBorrow
   - Spear
+  - Dino
   layers:
   - Default
   - TransparentFX
